@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6fa">
   <title>{{ page.title | default: site.title | escape }}</title>
   <script>
     window.MathJax = {
@@ -11,22 +12,75 @@
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   <style>
-    body { margin: 0; background: #fafbfc; color: #24292f; font: 16px/1.7 system-ui, sans-serif; }
-    main { max-width: 1440px; margin: 36px auto; padding: 28px; background: white; border: 1px solid #d8dee4; border-radius: 8px; }
-    h1 { font-size: 28px; line-height: 1.4; margin-top: 0; }
-    h2 { font-size: 22px; }
-    a { color: #0969da; text-decoration: none; }
+    :root { color-scheme: light; --ink: #25314a; --muted: #66738a; --blue: #3659bf; --line: #e3e8f0; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #f4f6fa; color: var(--ink); font: 15px/1.8 -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; -webkit-font-smoothing: antialiased; }
+    .site-header { max-width: 1600px; margin: auto; padding: 25px 32px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); font-size: 15px; font-weight: 650; letter-spacing: -.2px; }
+    .brand-mark { width: 30px; height: 30px; display: grid; place-items: center; background: #e7ecfb; color: var(--blue); border: 1px solid #d9e1f7; border-radius: 8px; font-size: 11px; letter-spacing: .5px; }
+    .site-nav { display: flex; gap: 24px; font-size: 13px; }
+    .site-nav a { color: var(--muted); }
+    main { max-width: 1536px; margin: 0 auto 48px; padding: 42px 40px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 8px 30px #25314a05; }
+    main.document { max-width: 1040px; padding: 42px 48px; }
+    h1, h2, h3, h4 { color: #1e2940; line-height: 1.35; font-weight: 650; scroll-margin-top: 24px; }
+    h1 { margin: 0 0 23px; font-size: clamp(28px, 3vw, 38px); letter-spacing: -1px; }
+    h2 { margin: 2em 0 .8em; padding-bottom: 10px; border-bottom: 1px solid var(--line); font-size: 24px; }
+    h3 { margin-top: 1.8em; font-size: 20px; }
+    p { margin: 1em 0; overflow-wrap: anywhere; }
+    .overview > p:first-of-type { max-width: 110ch; color: #56647b; font-size: 16px; line-height: 1.9; margin-bottom: 24px; }
+    .overview > p:nth-of-type(2) { color: var(--muted); font-size: 12px; padding-top: 18px; border-top: 1px solid var(--line); }
+    a { color: var(--blue); text-decoration: none; text-underline-offset: 3px; }
     a:hover { text-decoration: underline; }
-    table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; font-size: 14px; }
-    th, td { padding: 12px; border: 1px solid #d8dee4; min-width: 105px; vertical-align: top; }
-    th { background: #f3f5f7; text-align: left; }
-    tr:nth-child(even) { background: #fafbfc; }
-    img, video { max-width: 100%; height: auto; }
-    code { background: #f0f2f4; border-radius: 4px; padding: 2px 4px; }
-    pre { overflow: auto; padding: 16px; background: #f6f8fa; }
-    pre code { padding: 0; }
-    @media (max-width: 700px) { main { margin: 0; padding: 20px 14px; border: 0; border-radius: 0; } h1 { font-size: 23px; } }
+    a:focus-visible, .table-scroll:focus-visible { outline: 3px solid #91a9ed; outline-offset: 4px; border-radius: 3px; }
+    .table-scroll { overflow-x: auto; margin: 24px 0; border: 1px solid var(--line); border-radius: 10px; scrollbar-color: #bfcbe0 #f4f6fa; }
+    table { width: 100%; border-collapse: separate; border-spacing: 0; text-align: left; font-size: 13px; line-height: 1.65; }
+    th, td { padding: 18px 16px; min-width: 110px; vertical-align: top; border-bottom: 1px solid var(--line); }
+    th { background: #f5f7fc; color: #64718a; font-size: 11px; font-weight: 650; letter-spacing: .55px; text-transform: uppercase; white-space: nowrap; }
+    tbody tr:last-child td { border-bottom: 0; }
+    tbody tr:nth-child(even) td { background: #fbfcfe; }
+    tbody tr:hover td { background: #f2f5fd; }
+    .overview th:first-child, .overview td:first-child { min-width: 62px; width: 62px; color: var(--blue); font-weight: 650; font-size: 12px; }
+    .overview td:nth-child(2) { min-width: 190px; width: 17%; }
+    .overview td:nth-child(2) a { font-size: 14px; font-weight: 650; line-height: 1.5; }
+    .overview td:nth-child(5) { min-width: 205px; width: 18%; }
+    .overview td:nth-child(6), .overview td:nth-child(7) { color: #67748a; }
+    img, video { display: block; max-width: 100%; height: auto; margin: 24px auto; border-radius: 6px; }
+    code { background: #f0f3f8; border-radius: 4px; padding: 2px 5px; font-size: .88em; }
+    pre { overflow: auto; padding: 20px; border: 1px solid var(--line); border-radius: 8px; background: #f7f9fc; line-height: 1.65; }
+    pre code { padding: 0; background: transparent; }
+    blockquote { margin: 24px 0; padding: 4px 20px; border-left: 3px solid #b5c5ee; color: var(--muted); background: #f7f9fe; }
+    mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: 8px 0; }
+    @media (max-width: 1600px) { main { margin-left: 24px; margin-right: 24px; } main.document { margin-left: auto; margin-right: auto; } }
+    @media (max-width: 1088px) { main.document { margin-left: 24px; margin-right: 24px; } }
+    @media (max-width: 700px) {
+      .site-header { padding: 20px; } .site-nav { gap: 16px; font-size: 12px; }
+      main, main.document { margin: 0 12px 24px; padding: 26px 20px; border-radius: 10px; }
+      h1 { font-size: 28px; letter-spacing: -.6px; } .overview > p:first-of-type { font-size: 14px; }
+      th, td { padding: 14px 12px; } .table-scroll { margin: 20px 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
 </head>
-<body><main>{{ content }}</main></body>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark" aria-hidden="true">ER</span>Experiment Records</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}">Overview</a>
+      <a href="https://github.com/youngkinlon/experiment-records">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main class="{% if page.name == 'index.md' or page.name == 'README.md' or page.name == '实验总表.md' %}overview{% else %}document{% endif %}">{{ content }}</main>
+  <script>
+    document.querySelectorAll('main table').forEach(function (table) {
+      var wrapper = document.createElement('div');
+      wrapper.className = 'table-scroll';
+      wrapper.tabIndex = 0;
+      wrapper.setAttribute('role', 'region');
+      wrapper.setAttribute('aria-label', 'Scrollable data table');
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    });
+  </script>
+</body>
 </html>
