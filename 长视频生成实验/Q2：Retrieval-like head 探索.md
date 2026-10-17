@@ -36,16 +36,16 @@ $$
 - 原始：
 
 $$
-Q_{\mathrm{current}}\rightarrow
+A_{\mathrm{native}}=\operatorname{softmax}\!\left(\frac{Q_{\mathrm{current}}K_{\mathrm{visible}}^{\top}}{\sqrt{d_h}}\right)
 $$
 
 - 替换为：
 
 $$
-Q_B\rightarrow
+A_{\mathrm{donor}}=\operatorname{softmax}\!\left(\frac{Q_B^{\mathrm{aligned}}K_{\mathrm{visible}}^{\top}}{\sqrt{d_h}}\right)
 $$
 
-位置编码对齐当前块
+历史 B 的 Q 使用当前块的位置编码；两种计算使用同一份可见 K，softmax 沿 key 维度归一化。
 
 **统计目标匹配行为** 按历史块汇总 attention，比较替换前后：
 
