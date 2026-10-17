@@ -1,0 +1,21 @@
+title: Experiment Records
+url: https://youngkinlon.github.io
+baseurl: /experiment-records
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+exclude:
+  - scripts
+  - experiments.csv
+  - "**/.obsidian"
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

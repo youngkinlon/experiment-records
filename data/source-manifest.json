@@ -1,0 +1,74 @@
+[
+  {
+    "file": "assets/Q01-reading.png",
+    "source": "Self-Forcing/results/head_clusters_2_figure_wide/head_clusters_2_reading.png",
+    "source_sha256": "70b33b449703c1dc62e3e31cdd80d98a48c59074037bf9b4b83b71f0d4573cf2"
+  },
+  {
+    "file": "assets/Q02-B-dynamics.png",
+    "source": "Self-Forcing-clean-cluster2/results/B_gain_membership_and_suppression_prompt1_5_seed0/01_B_persistent_new_exit_heatmap.png",
+    "source_sha256": "1a29b15ca473fcc255d28b317473f33b7298cce1c3b0ef2ed96530e7f854ad13"
+  },
+  {
+    "file": "assets/Q02-C-candidates.png",
+    "source": "Self-Forcing-clean-cluster2/results/successor_C_gain5pp_strict5_prompt1_5_seed0/C_gain5pp_persistent_and_threshold_comparison.png",
+    "source_sha256": "7976598b853ccd42a526d78c9e187ca327cafa428e747d48c8db798bf12eeb88"
+  },
+  {
+    "file": "assets/Q04-prompt1-curves.png",
+    "source": "Self-Forcing-clean-cluster2/results/head_output_prompt1_video_inspection_seed0/prompt1_example_curves.png",
+    "source_sha256": "94cfa573bfa88ea51d72562d5fd137b77abc21df4a43517193c6f013fc65dd89"
+  },
+  {
+    "file": "assets/videos/prompt1-seed0.mp4",
+    "source": "Self-Forcing-clean-cluster2/results/head_output_prompt1_video_seed0/prompt1_seed0/video_29.8125s.mp4",
+    "source_sha256": "5585f0e5727b1766ca4b61b05db04ef6998a6a1e781ec6d4a61844d058084d17"
+  },
+  {
+    "file": "data/Q01-stability.json",
+    "source": "Self-Forcing/configs/head_behavior_clusters_2_stability.json",
+    "source_sha256": "093083db10dff073c1254eea8287f8976795e4a420432930ac687b336deb1409"
+  },
+  {
+    "file": "data/Q02-B-heads.csv",
+    "source": "Self-Forcing-clean-cluster2/results/query_gain_10pp_strict5_prompt1_5_seed0/head_cross_analysis.csv",
+    "source_sha256": "602e342dc44977768e29e5867b18cb2431cfafbc115d2f326ad1f0e6fac35f9d"
+  },
+  {
+    "file": "data/Q02-C-heads.csv",
+    "source": "Self-Forcing-clean-cluster2/results/successor_C_gain5pp_strict5_prompt1_5_seed0/C_all_heads.csv",
+    "source_sha256": "a98004d70fedabc7e5d3181a6c67b5a651e9ef3acc6ba71a9033b28569119d38"
+  },
+  {
+    "file": "data/Q04-five-prompts-heads.csv",
+    "source": "Self-Forcing-clean-cluster2/results/head_output_every_chunk_trends_from_start_seed0/head_trajectories.csv",
+    "source_sha256": "c3670be85a61029ee2a1294b0d4c4e681b8ab6831812b5e64a68b74e6515735e"
+  },
+  {
+    "file": "data/Q04-prompt1-heads.csv",
+    "source": "Self-Forcing-clean-cluster2/results/head_output_prompt1_video_inspection_seed0/head_categories.csv",
+    "source_sha256": "3a10039d9e9fc1428ca4c72950c85c2fbeb08d264f7991b601034136f9a3dd79"
+  },
+  {
+    "file": "data/Q04-prompt1-output.csv",
+    "source": "Self-Forcing-clean-cluster2/results/head_output_prompt1_video_inspection_seed0/head_output.csv",
+    "source_sha256": "2e0d14f1d299f79815cba08ce6582d0a957df3c5f3497ce4fd7516ab80721fe3"
+  },
+  {
+    "file": "viewer/chunk_timeline.csv",
+    "source": "Self-Forcing-clean-cluster2/results/head_output_prompt1_video_inspection_seed0/chunk_timeline.csv",
+    "source_sha256": "7971d8bb8b8c556a44ce0c285163c3caedd0c9c0d03c53305bb9407ea3b42234"
+  },
+  {
+    "file": "data/Q01-head-clusters.csv",
+    "source": "Self-Forcing/configs/head_behavior_clusters_2.json",
+    "source_sha256": "38136f434ef6de83b2d8ef4b6b6981ed7b5eb875e5e91b20e739e1585fb04ec0",
+    "transform": "Export frozen cluster_ids only."
+  },
+  {
+    "file": "viewer/prompt1.html",
+    "source": "Self-Forcing-clean-cluster2/results/head_output_prompt1_video_inspection_seed0/inspect.html",
+    "source_sha256": "26682479ba36e2a5fa697d1eef17a9a99c7f93331c62913d1952f269f08247e6",
+    "transform": "Keep recorded curves; relink same-run packaged video and add index navigation."
+  }
+]

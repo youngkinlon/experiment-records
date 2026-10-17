@@ -1,0 +1,6 @@
+﻿group,total_heads,qualified_5s,qualified_15s,qualified_30s
+persistent,14,14,14,14
+late_new,8,0,4,8
+early_lost,15,15,8,0
+returned,3,3,0,3
+middle_only,12,0,12,0

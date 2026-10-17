@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title | escape }}</title>
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], processEscapes: true }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <style>
+    body { margin: 0; background: #fafbfc; color: #24292f; font: 16px/1.7 system-ui, sans-serif; }
+    main { max-width: 1440px; margin: 36px auto; padding: 28px; background: white; border: 1px solid #d8dee4; border-radius: 8px; }
+    h1 { font-size: 28px; line-height: 1.4; margin-top: 0; }
+    h2 { font-size: 22px; }
+    a { color: #0969da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; font-size: 14px; }
+    th, td { padding: 12px; border: 1px solid #d8dee4; min-width: 105px; vertical-align: top; }
+    th { background: #f3f5f7; text-align: left; }
+    tr:nth-child(even) { background: #fafbfc; }
+    img, video { max-width: 100%; height: auto; }
+    code { background: #f0f2f4; border-radius: 4px; padding: 2px 4px; }
+    pre { overflow: auto; padding: 16px; background: #f6f8fa; }
+    pre code { padding: 0; }
+    @media (max-width: 700px) { main { margin: 0; padding: 20px 14px; border: 0; border-radius: 0; } h1 { font-size: 23px; } }
+  </style>
+</head>
+<body><main>{{ content }}</main></body>
+</html>

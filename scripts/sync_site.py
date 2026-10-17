@@ -1,0 +1,52 @@
+"""Sync the Obsidian overview to the website and normalize image embeds."""
+
+from pathlib import Path
+import re
+from urllib.parse import quote, unquote, urlsplit
+
+ROOT = Path(__file__).resolve().parents[1]
+VAULT = ROOT / "长视频生成实验"
+
+
+def sync():
+    source = VAULT / "实验总表.md"
+    text = source.read_text(encoding="utf-8")
+    homepage = re.sub(
+        r"(\]\()([^\s)]+\.md)(\))",
+        lambda m: m[1] + "长视频生成实验/" + m[2] + m[3],
+        text,
+    )
+    for name in ("index.md", "README.md"):
+        (ROOT / name).write_text(homepage, encoding="utf-8")
+
+    converted = 0
+    for path in VAULT.glob("*.md"):
+        original = path.read_text(encoding="utf-8")
+
+        def image(match):
+            nonlocal converted
+            name = match[1].split("|", 1)[0]
+            if not (path.parent / name).is_file():
+                raise ValueError(f"Missing embedded image: {path.name}: {name}")
+            converted += 1
+            return "![](" + quote(name, safe="/:") + ")"
+
+        updated = re.sub(r"!\[\[([^\]]+)\]\]", image, original)
+        if updated != original:
+            path.write_text(updated, encoding="utf-8")
+
+    checked = 0
+    for path in [ROOT / "index.md", ROOT / "README.md", *VAULT.glob("*.md")]:
+        for target in re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
+            parts = urlsplit(target)
+            if parts.scheme or parts.netloc or not parts.path:
+                continue
+            destination = path.parent / unquote(parts.path)
+            if not destination.is_file():
+                raise ValueError(f"Missing link: {path.name}: {target}")
+            checked += 1
+    print(f"Overview synced; {converted} image embeds normalized; {checked} local links verified.")
+
+
+if __name__ == "__main__":
+    sync()

@@ -1,0 +1,19 @@
+{
+  "source": "data\\Q02-B-heads.csv",
+  "source_sha256": "602e342dc44977768e29e5867b18cb2431cfafbc115d2f326ad1f0e6fac35f9d",
+  "condition": "minimum paired B gain across all five prompts >10 percentage points; no top1",
+  "time_totals": [
+    32,
+    38,
+    25
+  ],
+  "groups": {
+    "persistent": 14,
+    "late_new": 8,
+    "early_lost": 15,
+    "returned": 3,
+    "middle_only": 12,
+    "never": 308
+  },
+  "figure_meaning": "Snapshots of candidate membership; threshold crossings do not establish function emergence or loss."
+}
