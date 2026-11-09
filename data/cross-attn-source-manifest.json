@@ -1,0 +1,180 @@
+{
+  "pages": [
+    {
+      "source": "长视频生成实验/Q5：.md",
+      "output": "docs/Q05-ca-residual-scaling.md",
+      "source_sha256": "4036214a584968d4fe69b2c423226280150d6674d3a16f48c9755a913e903245"
+    },
+    {
+      "source": "长视频生成实验/Q6：.md",
+      "output": "docs/Q06-sa-ca-alignment.md",
+      "source_sha256": "ae034be06129bf3f599e8352f3c8c43d4cd6471e428672ee993b97e176980cd1"
+    },
+    {
+      "source": "长视频生成实验/Q7.md",
+      "output": "docs/Q07-history-ca-query.md",
+      "source_sha256": "2294a3d66beb0b71ed8346005d79a9b1f121af925e85cd3367e30852275fd197"
+    },
+    {
+      "source": "长视频生成实验/Self-Forcing inference 过程详解：.md",
+      "output": "docs/self-forcing-inference.md",
+      "source_sha256": "2a6502c6e186f03e80e212ba01840acd91e602354eab65fd9fdc96b6f896e518"
+    }
+  ],
+  "assets": [
+    {
+      "source": "长视频生成实验/Pasted image 20261108194219.png",
+      "output": "assets/cross-attn/Pasted-image-20261108194219-2589b67e82.png",
+      "sha256": "2589b67e82e942dd4de046c3fc0452dc6ca13c032939f7598795bd8b089776d4",
+      "bytes": 2958078
+    },
+    {
+      "source": "长视频生成实验/附件/Q6_visual_evidence_20261108/p0_s0_15s/time_aligned.mp4",
+      "output": "assets/cross-attn/Q6_visual_evidence_20261108-p0_s0_15s-time_aligned-1e44b89f63.mp4",
+      "sha256": "1e44b89f6354b76ecb1dfffdddb0140d45e73bae0bfc50d1ef83fbfa5d294807",
+      "bytes": 4836840
+    },
+    {
+      "source": "长视频生成实验/附件/Q6_visual_evidence_20261108/p0_s0_15s/timeline.png",
+      "output": "assets/cross-attn/Q6_visual_evidence_20261108-p0_s0_15s-timeline-730ea8bbc0.png",
+      "sha256": "730ea8bbc0c21310b9ba9efe8d070760b1aca7a56cf6ea964ad11f7df6f2b002",
+      "bytes": 1489441
+    },
+    {
+      "source": "长视频生成实验/附件/Q6_visual_evidence_20261108/p0_s0_15s/drop_detail.png",
+      "output": "assets/cross-attn/Q6_visual_evidence_20261108-p0_s0_15s-drop_detail-966cd355c5.png",
+      "sha256": "966cd355c534ac17a7d8703d0227c064c0035425e61b1b32d61bb1fbdb5b0b3e",
+      "bytes": 875508
+    },
+    {
+      "source": "长视频生成实验/附件/Q6_visual_evidence_20261108/p1_s0_15s/time_aligned.mp4",
+      "output": "assets/cross-attn/Q6_visual_evidence_20261108-p1_s0_15s-time_aligned-a6fd72a4be.mp4",
+      "sha256": "a6fd72a4beacae20522e1c08a02b624db2445f7b869ae2fc1ed3af4ef252e9b1",
+      "bytes": 5353592
+    },
+    {
+      "source": "长视频生成实验/附件/Q6_visual_evidence_20261108/p1_s0_15s/drop_detail.png",
+      "output": "assets/cross-attn/Q6_visual_evidence_20261108-p1_s0_15s-drop_detail-b3a8fe0e8d.png",
+      "sha256": "b3a8fe0e8d1ae6ce722702d24c2bd4e08b9d46865f55f9518f43b0dc2f67d09c",
+      "bytes": 915946
+    },
+    {
+      "source": "长视频生成实验/附件/Q6_visual_evidence_20261108/p0_s0_30s/time_aligned.mp4",
+      "output": "assets/cross-attn/Q6_visual_evidence_20261108-p0_s0_30s-time_aligned-6f611525fb.mp4",
+      "sha256": "6f611525fbd238ca1372234ddac725bc7a6ee8f81c671c8b99d0a1e2d03f489b",
+      "bytes": 14260530
+    },
+    {
+      "source": "长视频生成实验/附件/Q6_visual_evidence_20261108/p4_s0_15s/time_aligned.mp4",
+      "output": "assets/cross-attn/Q6_visual_evidence_20261108-p4_s0_15s-time_aligned-77c378c33e.mp4",
+      "sha256": "77c378c33e52530ac63a0a3a980c72eca70b50e7ad9af0e922df14e586ac4e0b",
+      "bytes": 2796102
+    },
+    {
+      "source": "长视频生成实验/附件/Q6_visual_evidence_20261108/p0_s0_5s/time_aligned.mp4",
+      "output": "assets/cross-attn/Q6_visual_evidence_20261108-p0_s0_5s-time_aligned-3da6868466.mp4",
+      "sha256": "3da6868466b8c4ac3edca31b636dbc84777480020786625b86887352052168c4",
+      "bytes": 1607140
+    },
+    {
+      "source": "长视频生成实验/附件/Q6_visual_evidence_20261108/p0_s0_10s/time_aligned.mp4",
+      "output": "assets/cross-attn/Q6_visual_evidence_20261108-p0_s0_10s-time_aligned-95ac4722cf.mp4",
+      "sha256": "95ac4722cfad633d6274fe6565d4bde004e25dca970c7417bcd1516d125bc108",
+      "bytes": 3580928
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261108165729.png",
+      "output": "assets/cross-attn/Pasted-image-20261108165729-c86c96e907.png",
+      "sha256": "c86c96e90794895e69675263c058ca32d084b04206566943c55bf8a16e9ae9cd",
+      "bytes": 557887
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261108165632.png",
+      "output": "assets/cross-attn/Pasted-image-20261108165632-929df1fac6.png",
+      "sha256": "929df1fac65edd199f122b12dab72e212f6adeb3fae663edb2bdecaf616b6d34",
+      "bytes": 505071
+    },
+    {
+      "source": "长视频生成实验/附件/H1_history_evidence_20261108/run_a/paired.mp4",
+      "output": "assets/cross-attn/H1_history_evidence_20261108-run_a-paired-53cccff9b5.mp4",
+      "sha256": "53cccff9b5903549a59bd0f20b527fd54740f1ca2771a0418ec133bb1cbd5dd5",
+      "bytes": 9950517
+    },
+    {
+      "source": "长视频生成实验/附件/H1_history_evidence_20261108/run_d/paired.mp4",
+      "output": "assets/cross-attn/H1_history_evidence_20261108-run_d-paired-8a4d33063a.mp4",
+      "sha256": "8a4d33063a3a9014e34fa35aa30234343c6ba4188472109c01d9eba349739945",
+      "bytes": 26936147
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261104110329.png",
+      "output": "assets/cross-attn/Pasted-image-20261104110329-8ff5f3df27.png",
+      "sha256": "8ff5f3df2787254f38cfc8ba0985cd23a016f2c7b3fcebdc20bf019d39ef7ea4",
+      "bytes": 13301
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261017183209.png",
+      "output": "assets/cross-attn/Pasted-image-20261017183209-520fe9b43c.png",
+      "sha256": "520fe9b43c0582cdcc649c0d40b06cba604d5dd89d17a0ecc89bb3760d263ee4",
+      "bytes": 12388
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261017183214.png",
+      "output": "assets/cross-attn/Pasted-image-20261017183214-0d2661841d.png",
+      "sha256": "0d2661841d0ab076b535186be8226d1eb91cc8fa471a742bf266203fd9384dfc",
+      "bytes": 7656
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261017183219.png",
+      "output": "assets/cross-attn/Pasted-image-20261017183219-7804074d79.png",
+      "sha256": "7804074d792eea0a54265df1bbf976b97deef986e159757fed59c53563e71583",
+      "bytes": 6768
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261017183225.png",
+      "output": "assets/cross-attn/Pasted-image-20261017183225-96d272fb4f.png",
+      "sha256": "96d272fb4f04a2538dc48a903e7218db87dd0e307244d4d133332dce9b2ace01",
+      "bytes": 9139
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261017183229.png",
+      "output": "assets/cross-attn/Pasted-image-20261017183229-dbe8e37522.png",
+      "sha256": "dbe8e37522c2f4e8ffaff0d89ec6c5962345e1246bd039bf3d98655fdcdbd241",
+      "bytes": 3876
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261017183234.png",
+      "output": "assets/cross-attn/Pasted-image-20261017183234-8931a8495c.png",
+      "sha256": "8931a8495ce63b7c5dcdc8c6f7f09fddc3ac4cb3493b2fba3656cf49bfa12dfb",
+      "bytes": 5597
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261017183239.png",
+      "output": "assets/cross-attn/Pasted-image-20261017183239-0a2a0b6f0a.png",
+      "sha256": "0a2a0b6f0a334b7b8e24023e7e2ea52312cace3d4a9d962fddec2ba827874c74",
+      "bytes": 5074
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261017183244.png",
+      "output": "assets/cross-attn/Pasted-image-20261017183244-286afb79f5.png",
+      "sha256": "286afb79f5995e3d4019140f133e659010e0ab82bd9cd8d8a5fb4ce2913e5af6",
+      "bytes": 4992
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261017183249.png",
+      "output": "assets/cross-attn/Pasted-image-20261017183249-02f34d9068.png",
+      "sha256": "02f34d90680b67cc8f2cf93c7f8b5085498f74525a546dc7ed3b6f0d219c8a53",
+      "bytes": 3781
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261017183253.png",
+      "output": "assets/cross-attn/Pasted-image-20261017183253-de34d1bbf7.png",
+      "sha256": "de34d1bbf7a42ef2c7bfd64c29a1e5c6ab1f8ad0dd9521c7d82ca52505907a90",
+      "bytes": 3703
+    }
+  ],
+  "overview_source_sha256": "80688cf85745bc71279b9c628cd48ea07afbbe2b10afc001c20c4750d501731d",
+  "checked_links": 49,
+  "notes_modified": false,
+  "summary_selection": "One English Q05 row; first linked Q06/Q07 rows; concise next steps retained."
+}
