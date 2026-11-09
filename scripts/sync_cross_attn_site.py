@@ -56,6 +56,27 @@ def normalize_math(text):
     return "".join(parts)
 
 
+def normalize_table_boundaries(text):
+    """Kramdown needs a blank boundary after tables followed by prose."""
+    result = []
+    in_table = False
+    fenced = False
+    display_math = False
+    for line in text.splitlines():
+        if line.lstrip().startswith("```"):
+            fenced = not fenced
+        if line.strip() == "$$" and not fenced:
+            display_math = not display_math
+        table_line = line.lstrip().startswith("|") and not fenced and not display_math
+        if table_line and not in_table and result and result[-1].strip():
+            result.append("")
+        if in_table and not table_line and line.strip():
+            result.append("")
+        result.append(line)
+        in_table = table_line
+    return "\n".join(result)
+
+
 class Exporter:
     def __init__(self):
         self.assets = {}
@@ -148,6 +169,7 @@ class Exporter:
         text = normalize_math("\n".join(result))
         blocks = text.split("\n\n")
         text = "\n\n".join("```text\n"+b+"\n```" if "↓" in b and "$$" not in b else b for b in blocks)
+        text = normalize_table_boundaries(text)
         assert "![[" not in text and not re.search(r"[A-Z]:[\\/]", text)
         self.pages.append(dict(source=source_page.relative_to(ROOT).as_posix(),
                                output=destination_page.relative_to(ROOT).as_posix(), source_sha256=sha256(source_page)))
