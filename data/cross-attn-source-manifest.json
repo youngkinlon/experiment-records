@@ -19,6 +19,11 @@
       "source": "长视频生成实验/Self-Forcing inference 过程详解：.md",
       "output": "docs/self-forcing-inference.md",
       "source_sha256": "2a6502c6e186f03e80e212ba01840acd91e602354eab65fd9fdc96b6f896e518"
+    },
+    {
+      "source": "长视频生成实验/Q8.md",
+      "output": "docs/Q08-middle-history-ca-query.md",
+      "source_sha256": "329fec9523ed69baa6d62b0ce6f2ebf473f24503c4b1d3b44091f39103a07292"
     }
   ],
   "assets": [
@@ -171,10 +176,70 @@
       "output": "assets/cross-attn/Pasted-image-20261017183253-de34d1bbf7.png",
       "sha256": "de34d1bbf7a42ef2c7bfd64c29a1e5c6ab1f8ad0dd9521c7d82ca52505907a90",
       "bytes": 3703
+    },
+    {
+      "source": "长视频生成实验/附件/Q7_middle_and_frozen_ca_20261114/p0_ca_keep1_frame_comparison.mp4",
+      "output": "assets/cross-attn/Q7_middle_and_frozen_ca_20261114-p0_ca_keep1_frame_comparison-c597c4e5a1.mp4",
+      "sha256": "c597c4e5a124fd915ebcd3add6a41324a7d75a6ab3ac1dfa7f7a1f540b2b6bfc",
+      "bytes": 3539692
+    },
+    {
+      "source": "长视频生成实验/附件/Q7_middle_and_frozen_ca_20261114/p4_ca_keep1_frame_comparison.mp4",
+      "output": "assets/cross-attn/Q7_middle_and_frozen_ca_20261114-p4_ca_keep1_frame_comparison-67ba1ad226.mp4",
+      "sha256": "67ba1ad2261231301c2ba10b8c3773a0285ccbb4d721d955166e932e2a3d94d9",
+      "bytes": 1235861
+    },
+    {
+      "source": "长视频生成实验/附件/Q08_ca_query_timeline/p0_native.mp4",
+      "output": "assets/cross-attn/Q08_ca_query_timeline-p0_native-1b380bb5a4.mp4",
+      "sha256": "1b380bb5a47b2b22321dd0d05d22f375f7c0c2d85f1d26c48cf950996dad9d4f",
+      "bytes": 5237360
+    },
+    {
+      "source": "长视频生成实验/附件/Q08_ca_query_timeline/p0_ca_keep1_chunk.mp4",
+      "output": "assets/cross-attn/Q08_ca_query_timeline-p0_ca_keep1_chunk-56d8514637.mp4",
+      "sha256": "56d85146376bd68d6e5e04f243f47479534b1ce7e16edb48534677d1b0e098a6",
+      "bytes": 5100487
+    },
+    {
+      "source": "长视频生成实验/附件/Q08_ca_query_timeline/p0_ca_keep0_chunk.mp4",
+      "output": "assets/cross-attn/Q08_ca_query_timeline-p0_ca_keep0_chunk-44ff814f0b.mp4",
+      "sha256": "44ff814f0ba31e3b31a103c9e2d81d66581982be19baeefe1193189d045f6fc1",
+      "bytes": 6150842
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261116131446.png",
+      "output": "assets/cross-attn/Pasted-image-20261116131446-0b9fff0c7b.png",
+      "sha256": "0b9fff0c7ba15d76c5f17a9811d7895ac990f39c6989e3529882ebfdcd1ab873",
+      "bytes": 162671
+    },
+    {
+      "source": "长视频生成实验/附件/Q7_middle_and_frozen_ca_20261114/p0_middle_comparison.mp4",
+      "output": "assets/cross-attn/Q7_middle_and_frozen_ca_20261114-p0_middle_comparison-cc088755c7.mp4",
+      "sha256": "cc088755c79a33590d20ff1420c9bf87c6a2cbd256fca7a240fc03fd6618edba",
+      "bytes": 6463478
+    },
+    {
+      "source": "长视频生成实验/Pasted image 20261116135256.png",
+      "output": "assets/cross-attn/Pasted-image-20261116135256-fbb36abcef.png",
+      "sha256": "fbb36abcef87d1da181812983ecf432a710cb9fc6c7aba2b343ec38af780fa24",
+      "bytes": 196168
+    },
+    {
+      "source": "长视频生成实验/附件/Q7_middle_and_frozen_ca_20261114/p4_middle_comparison.mp4",
+      "output": "assets/cross-attn/Q7_middle_and_frozen_ca_20261114-p4_middle_comparison-c3d4f24aa3.mp4",
+      "sha256": "c3d4f24aa3d427df857a3eaedc1385d7cdc0141d65a57158fff7a88a55cd6846",
+      "bytes": 2175411
+    },
+    {
+      "source": "长视频生成实验/附件/Q7_middle_and_frozen_ca_20261114/p0_ca_frozen_comparison.mp4",
+      "output": "assets/cross-attn/Q7_middle_and_frozen_ca_20261114-p0_ca_frozen_comparison-2f47a8214e.mp4",
+      "sha256": "2f47a8214e941ba1336a4cc1bd4d36749dd0bcaea16f2e96efab04419fcc9323",
+      "bytes": 4612285
     }
   ],
   "overview_source_sha256": "80688cf85745bc71279b9c628cd48ea07afbbe2b10afc001c20c4750d501731d",
-  "checked_links": 49,
+  "checked_links": 69,
   "notes_modified": false,
   "summary_selection": "One English Q05 row; first linked Q06/Q07 rows; concise next steps retained."
 }
